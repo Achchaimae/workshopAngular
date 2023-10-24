@@ -1,0 +1,58 @@
+<!-- <div class=" p-4 ">
+    <h1 class="text-center text-4xl"> Gejutsu Hero </h1>
+    <div class=" bg-blue-200 p-8 flex flex-row gap-4  w-full mt-20 justify-between my-auto">
+        <div>
+            <input [(ngModel)]="hero.name" type="text" name="" class="rounded-lg py-2" placeholder="  name">
+        </div>
+        <div>
+            <input [(ngModel)]="hero.power" type="text" name="" class="rounded-lg py-2" placeholder="  power">
+        </div>
+        <div>
+            <input [(ngModel)]="hero.imageUrl" type="text" name="" class="rounded-lg py-2" placeholder="  imageUrl">
+        </div>
+        <div>
+            <button (click)="ajout()" class="bg-purple-400 rounded-lg  py-2 w-28">Create</button>
+        </div>
+    </div>
+
+    <div class="flex flex-row mt-5 gap-20">
+
+        
+        <div *ngFor="let item of heros">
+
+        
+        <div [ngClass]="{ 'card bg-white text-center p-1 w-[22vw]':true , 'hight':item.power>100 , 'medium':item.power<100 && item.power>50 ,'low':item.power<50 }"  >
+            <div class="card-image">
+                <img [src]="item.imageUrl" alt="">
+            </div>
+
+            <div class="card-body">
+                <h2>{{ item.name}}</h2>
+                <p> {{item.power}}</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</div>  -->
+
+<!-- 
+<div class=" p-4 ">
+    <h1 class="text-center text-4xl"> AB Hero </h1>
+    <app-ajout></app-ajout>
+
+   <app-list></app-list>
+    
+</div> -->
+
+
+<h1 class="text-center text-4xl"> malna Hero </h1>
+
+    <app-ajout></app-ajout>
+
+<div class="flex flex-row mt-5 gap-20">
+
+    
+    <app-list></app-list>
+    
+</div>
